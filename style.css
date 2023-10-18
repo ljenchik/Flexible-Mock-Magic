@@ -4,18 +4,26 @@
     font-size: 20px;
 }
 
+body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
 .navbar {
     width: 100vw;
     background-color: #59d9a1;
     padding-left: 30px;
     padding-right: 10px;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
     display: inline-block;
+    min-width: max-content;
 }
 
 .nav-links {
@@ -28,6 +36,10 @@
     padding: 10px 15px;
     text-decoration: none;
     color: white;
+}
+
+.nav-item:last-child {
+    padding-right: 40px;
 }
 
 .nav-item:hover {
